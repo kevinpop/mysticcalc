@@ -1,65 +1,93 @@
-import Image from "next/image";
+import Link from "next/link";
+import angelNumbers from "@/data/angel-numbers.json";
+import dreamSymbols from "@/data/dream-symbols.json";
 
-export default function Home() {
+export default function HomePage() {
+  const topAngel = Object.values(angelNumbers).slice(0, 6);
+  const topDreams = Object.values(dreamSymbols).slice(0, 6);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="space-y-12">
+      <section className="text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold text-purple-900 mb-4">
+          Discover the Meaning Behind the Numbers &amp; Dreams
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Free angel number calculator, dream dictionary, and spiritual tools.
+          Understand what the universe is telling you.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold text-purple-800 mb-4">
+          Popular Angel Numbers
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {topAngel.map((a) => (
+            <Link
+              key={a.slug}
+              href={`/angel-numbers/${a.slug}`}
+              className="rounded-xl border border-purple-100 p-4 hover:border-purple-300 hover:bg-purple-50 transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <span className="text-2xl font-bold text-purple-800">
+                {a.number}
+              </span>
+              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                {a.coreMeaning}
+              </p>
+            </Link>
+          ))}
+        </div>
+        <Link
+          href="/angel-numbers"
+          className="mt-4 inline-block text-purple-700 hover:underline"
+        >
+          View all angel numbers →
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold text-indigo-800 mb-4">
+          Popular Dream Meanings
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {topDreams.map((d) => (
+            <Link
+              key={d.slug}
+              href={`/dreams/${d.slug}`}
+              className="rounded-xl border border-indigo-100 p-4 hover:border-indigo-300 hover:bg-indigo-50 transition"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <span className="text-lg font-bold text-indigo-800 capitalize">
+                {d.symbol}
+              </span>
+              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                {d.coreMeaning}
+              </p>
+            </Link>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <Link
+          href="/dreams"
+          className="mt-4 inline-block text-indigo-700 hover:underline"
+        >
+          View all dream meanings →
+        </Link>
+      </section>
+
+      <section className="bg-purple-50 rounded-2xl p-6 text-center">
+        <h2 className="text-xl font-semibold text-purple-900 mb-2">
+          Free Angel Number Calculator
+        </h2>
+        <p className="text-purple-700 mb-4">
+          Enter your birthday and discover your personal angel number.
+        </p>
+        <Link
+          href="/tools/angel-number-calculator"
+          className="inline-block rounded-lg bg-purple-700 text-white px-6 py-2 font-medium hover:bg-purple-800 transition"
+        >
+          Try the Calculator
+        </Link>
+      </section>
     </div>
   );
 }
