@@ -19,6 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+    {
+      url: `${base}/tools/numerology-calculator`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     { url: `${base}/about`, lastModified: new Date(), priority: 0.3 },
     { url: `${base}/contact`, lastModified: new Date(), priority: 0.3 },
     {

@@ -88,6 +88,21 @@ export default function HomePage() {
           Try the Calculator
         </Link>
       </section>
+
+      <section className="bg-indigo-50 rounded-2xl p-6 text-center">
+        <h2 className="text-xl font-semibold text-indigo-900 mb-2">
+          🔮 Numerology Calculator
+        </h2>
+        <p className="text-indigo-700 mb-4">
+          Discover your Life Path Number — the most important number in your numerology chart.
+        </p>
+        <Link
+          href="/tools/numerology-calculator"
+          className="inline-block rounded-lg bg-indigo-700 text-white px-6 py-2 font-medium hover:bg-indigo-800 transition"
+        >
+          Find Your Life Path Number
+        </Link>
+      </section>
     </div>
   );
 }
