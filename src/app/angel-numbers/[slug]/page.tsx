@@ -7,17 +7,23 @@ import AngelNumberCalculator from "@/components/AngelNumberCalculator";
 import RelatedLinks from "@/components/RelatedLinks";
 import type { Metadata } from "next";
 
-type PageProps = { params: Promise<{ number: string }> };
+type AngelNumberEntry = (typeof angelNumbers)[keyof typeof angelNumbers];
+
+function findBySlug(slug: string): AngelNumberEntry | undefined {
+  return Object.values(angelNumbers).find((a) => a.slug === slug);
+}
+
+type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return Object.keys(angelNumbers).map((number) => ({ number }));
+  return Object.values(angelNumbers).map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { number } = await params;
-  const data = angelNumbers[number as keyof typeof angelNumbers];
+  const { slug } = await params;
+  const data = findBySlug(slug);
   if (!data) return {};
   return {
     title: `${data.number} Angel Number Meaning — Love, Career & Spiritual`,
@@ -32,8 +38,8 @@ export async function generateMetadata({
 }
 
 export default async function AngelNumberPage({ params }: PageProps) {
-  const { number } = await params;
-  const data = angelNumbers[number as keyof typeof angelNumbers];
+  const { slug } = await params;
+  const data = findBySlug(slug);
   if (!data) notFound();
 
   const relatedLinks = data.relatedNumbers.map((n) => ({

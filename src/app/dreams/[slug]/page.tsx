@@ -7,17 +7,23 @@ import DreamSearchTool from "@/components/DreamSearchTool";
 import RelatedLinks from "@/components/RelatedLinks";
 import type { Metadata } from "next";
 
-type PageProps = { params: Promise<{ topic: string }> };
+type DreamEntry = (typeof dreamSymbols)[keyof typeof dreamSymbols];
+
+function findBySlug(slug: string): DreamEntry | undefined {
+  return Object.values(dreamSymbols).find((d) => d.slug === slug);
+}
+
+type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return Object.keys(dreamSymbols).map((topic) => ({ topic }));
+  return Object.values(dreamSymbols).map((d) => ({ slug: d.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { topic } = await params;
-  const data = dreamSymbols[topic as keyof typeof dreamSymbols];
+  const { slug } = await params;
+  const data = findBySlug(slug);
   if (!data) return {};
   return {
     title: `${data.title} — What Does It Mean?`,
@@ -32,14 +38,18 @@ export async function generateMetadata({
 }
 
 export default async function DreamPage({ params }: PageProps) {
-  const { topic } = await params;
-  const data = dreamSymbols[topic as keyof typeof dreamSymbols];
+  const { slug } = await params;
+  const data = findBySlug(slug);
   if (!data) notFound();
 
-  const relatedLinks = data.relatedDreams.map((d) => ({
-    label: `Dream about ${d}`,
-    href: `/dreams/dream-about-${d}-meaning`,
-  }));
+  // Build related links from the relatedDreams keys
+  const relatedLinks = data.relatedDreams.map((d) => {
+    const entry = dreamSymbols[d as keyof typeof dreamSymbols];
+    return {
+      label: `Dream about ${d}`,
+      href: `/dreams/${entry ? entry.slug : `dream-about-${d}-meaning`}`,
+    };
+  });
 
   return (
     <article className="prose prose-indigo max-w-none">
