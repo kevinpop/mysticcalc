@@ -17,10 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const relatedLinks = (data.relatedPages || []).map((s: string) => ({
-  label: s.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()),
-  href: `/feng-shui/${s}`,
-}));
+const relatedLinks = (data.relatedPages || []) as { label: string; href: string }[];
 
 export default function Page() {
   return (

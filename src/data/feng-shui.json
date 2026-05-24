@@ -66,20 +66,20 @@
     ],
     "relatedPages": [
       {
-        "label": "Feng Shui Colors Guide",
+        "label": "Feng Shui Colors",
         "href": "/feng-shui/colors"
       },
       {
-        "label": "Feng Shui Home Tips",
+        "label": "Feng Shui Tips",
         "href": "/feng-shui/tips"
       },
       {
-        "label": "Crystals for the Home",
-        "href": "/crystals"
+        "label": "Amethyst Crystal Meaning",
+        "href": "/crystals/amethyst-meaning"
       },
       {
-        "label": "Angel Number Meanings",
-        "href": "/angel-numbers"
+        "label": "Rose Quartz Crystal Meaning",
+        "href": "/crystals/rose-quartz-meaning"
       }
     ]
   },
@@ -165,20 +165,20 @@
     ],
     "relatedPages": [
       {
-        "label": "Feng Shui Bedroom Layout",
+        "label": "Feng Shui Bedroom",
         "href": "/feng-shui/bedroom"
       },
       {
-        "label": "Feng Shui Home Tips",
+        "label": "Feng Shui Tips",
         "href": "/feng-shui/tips"
       },
       {
-        "label": "Crystal Colors & Meanings",
+        "label": "Crystal Meanings",
         "href": "/crystals"
       },
       {
-        "label": "Angel Number Meanings",
-        "href": "/angel-numbers"
+        "label": "Feng Shui Front Door",
+        "href": "/feng-shui/front-door"
       }
     ]
   },
@@ -249,15 +249,15 @@
     ],
     "relatedPages": [
       {
-        "label": "Feng Shui Bedroom Layout",
+        "label": "Feng Shui Bedroom",
         "href": "/feng-shui/bedroom"
       },
       {
-        "label": "Feng Shui Colors Guide",
+        "label": "Feng Shui Colors",
         "href": "/feng-shui/colors"
       },
       {
-        "label": "Crystals for the Home",
+        "label": "Crystal Meanings",
         "href": "/crystals"
       },
       {
@@ -326,9 +326,22 @@
       }
     ],
     "relatedPages": [
-      "bedroom",
-      "tips",
-      "front-door"
+      {
+        "label": "Feng Shui Bedroom",
+        "href": "/feng-shui/bedroom"
+      },
+      {
+        "label": "Feng Shui Tips",
+        "href": "/feng-shui/tips"
+      },
+      {
+        "label": "Feng Shui Front Door",
+        "href": "/feng-shui/front-door"
+      },
+      {
+        "label": "Crystal Meanings",
+        "href": "/crystals"
+      }
     ]
   },
   "front-door": {
@@ -396,9 +409,26 @@
       }
     ],
     "relatedPages": [
-      "bedroom",
-      "kitchen",
-      "tips"
+      {
+        "label": "Feng Shui Bedroom",
+        "href": "/feng-shui/bedroom"
+      },
+      {
+        "label": "Feng Shui Kitchen",
+        "href": "/feng-shui/kitchen"
+      },
+      {
+        "label": "Feng Shui Tips",
+        "href": "/feng-shui/tips"
+      },
+      {
+        "label": "Feng Shui Colors",
+        "href": "/feng-shui/colors"
+      },
+      {
+        "label": "Crystal Meanings",
+        "href": "/crystals"
+      }
     ]
   },
   "office": {
@@ -461,9 +491,22 @@
       }
     ],
     "relatedPages": [
-      "tips",
-      "bedroom",
-      "kitchen"
+      {
+        "label": "Feng Shui Tips",
+        "href": "/feng-shui/tips"
+      },
+      {
+        "label": "Feng Shui Bedroom",
+        "href": "/feng-shui/bedroom"
+      },
+      {
+        "label": "Feng Shui Kitchen",
+        "href": "/feng-shui/kitchen"
+      },
+      {
+        "label": "Crystal Meanings",
+        "href": "/crystals"
+      }
     ]
   },
   "plants": {
@@ -521,9 +564,22 @@
       }
     ],
     "relatedPages": [
-      "tips",
-      "bedroom",
-      "office"
+      {
+        "label": "Feng Shui Tips",
+        "href": "/feng-shui/tips"
+      },
+      {
+        "label": "Feng Shui Bedroom",
+        "href": "/feng-shui/bedroom"
+      },
+      {
+        "label": "Feng Shui Office",
+        "href": "/feng-shui/office"
+      },
+      {
+        "label": "Crystal Meanings",
+        "href": "/crystals"
+      }
     ]
   },
   "mirror": {
@@ -581,9 +637,22 @@
       }
     ],
     "relatedPages": [
-      "bedroom",
-      "tips",
-      "front-door"
+      {
+        "label": "Feng Shui Bedroom",
+        "href": "/feng-shui/bedroom"
+      },
+      {
+        "label": "Feng Shui Tips",
+        "href": "/feng-shui/tips"
+      },
+      {
+        "label": "Feng Shui Front Door",
+        "href": "/feng-shui/front-door"
+      },
+      {
+        "label": "Feng Shui Colors",
+        "href": "/feng-shui/colors"
+      }
     ]
   }
 }
