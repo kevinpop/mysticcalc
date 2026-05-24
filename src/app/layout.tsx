@@ -5,11 +5,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://mysticcalc.com"),
   title: {
-    default: "MysticCalc — Angel Numbers, Dream Meanings & Spiritual Tools",
+    default: "Angel Number Calculator — Find Your Angel Number Meaning | MysticCalc",
     template: "%s | MysticCalc",
   },
   description:
-    "Free angel number calculator, dream dictionary, and spiritual tools. Discover the meaning of 444, 555, 777, and more. Decode your dreams and find your path.",
+    "Free angel number calculator. Enter your birthday to find your personal angel number, then discover the spiritual meaning of 111, 222, 444, 555, 777 and more.",
   verification: {
     google: "4iB5jWO1Sy1iwiy-grj-0v7yvDOZnpSz19kD5_PqILg",
   },

@@ -10,20 +10,48 @@ export default function HomePage() {
 
   return (
     <div className="space-y-12">
+      {/* Hero — Focused on Angel Number Calculator */}
       <section className="text-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-purple-900 mb-4">
-          Discover the Meaning Behind the Numbers &amp; Dreams
+          Angel Number Calculator — Discover Your Number's Meaning
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Free angel number calculator, dream dictionary, and spiritual tools.
-          Understand what the universe is telling you.
+        <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+          Enter your birthday to find your personal angel number. Then explore
+          the spiritual meaning of 111, 222, 444, 555, 777, and more.
         </p>
+        <Link
+          href="/tools/angel-number-calculator"
+          className="inline-block rounded-lg bg-purple-700 text-white px-8 py-3 font-medium hover:bg-purple-800 transition text-lg"
+        >
+          Find Your Angel Number →
+        </Link>
       </section>
 
+      {/* Calculator CTA */}
+      <section className="bg-purple-50 rounded-2xl p-6 text-center">
+        <h2 className="text-xl font-semibold text-purple-900 mb-2">
+          What Is My Angel Number?
+        </h2>
+        <p className="text-purple-700 mb-4">
+          Enter your birthday and discover your personal angel number and its spiritual meaning.
+        </p>
+        <Link
+          href="/tools/angel-number-calculator"
+          className="inline-block rounded-lg bg-purple-700 text-white px-6 py-2 font-medium hover:bg-purple-800 transition"
+        >
+          Try the Calculator
+        </Link>
+      </section>
+
+      {/* Popular Angel Numbers — Main content focus */}
       <section>
         <h2 className="text-2xl font-semibold text-purple-800 mb-4">
           Popular Angel Numbers
         </h2>
+        <p className="text-gray-600 mb-4">
+          Each angel number carries a unique spiritual message. Click any number
+          to discover its full meaning.
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {topAngel.map((a) => (
             <Link
@@ -44,109 +72,11 @@ export default function HomePage() {
           href="/angel-numbers"
           className="mt-4 inline-block text-purple-700 hover:underline"
         >
-          View all angel numbers →
+          View all 143 angel numbers →
         </Link>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-indigo-800 mb-4">
-          Popular Dream Meanings
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {topDreams.map((d) => (
-            <Link
-              key={d.slug}
-              href={`/dreams/${d.slug}`}
-              className="rounded-xl border border-indigo-100 p-4 hover:border-indigo-300 hover:bg-indigo-50 transition"
-            >
-              <span className="text-lg font-bold text-indigo-800 capitalize">
-                {d.symbol}
-              </span>
-              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                {d.coreMeaning}
-              </p>
-            </Link>
-          ))}
-        </div>
-        <Link
-          href="/dreams"
-          className="mt-4 inline-block text-indigo-700 hover:underline"
-        >
-          View all dream meanings →
-        </Link>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold text-purple-800 mb-4">
-          Crystal Meanings &amp; Healing Properties
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {Object.values(crystals).map((c) => (
-            <Link
-              key={c.slug}
-              href={`/crystals/${c.slug}`}
-              className="rounded-xl border border-violet-100 p-4 hover:border-violet-300 hover:bg-violet-50 transition"
-            >
-              <span className="text-lg font-bold text-violet-800 capitalize">
-                {c.h1?.split("—")[0]?.trim() || c.slug.replace(/-/g, " ")}
-              </span>
-              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                {c.meaning?.substring(0, 100)}...
-              </p>
-            </Link>
-          ))}
-        </div>
-        <Link
-          href="/crystals"
-          className="mt-4 inline-block text-violet-700 hover:underline"
-        >
-          View all crystal meanings →
-        </Link>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold text-emerald-800 mb-4">
-          Feng Shui Guide
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {Object.values(fengShui).map((f) => (
-            <Link
-              key={f.slug}
-              href={`/feng-shui/${f.slug}`}
-              className="rounded-xl border border-emerald-100 p-4 hover:border-emerald-300 hover:bg-emerald-50 transition"
-            >
-              <span className="text-lg font-bold text-emerald-800 capitalize">
-                {f.title?.split("—")[0]?.trim() || f.slug.replace(/-/g, " ")}
-              </span>
-              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                {f.content?.substring(0, 100)}...
-              </p>
-            </Link>
-          ))}
-        </div>
-        <Link
-          href="/feng-shui"
-          className="mt-4 inline-block text-emerald-700 hover:underline"
-        >
-          View all feng shui guides →
-        </Link>
-      </section>
-
-      <section className="bg-purple-50 rounded-2xl p-6 text-center">
-        <h2 className="text-xl font-semibold text-purple-900 mb-2">
-          Free Angel Number Calculator
-        </h2>
-        <p className="text-purple-700 mb-4">
-          Enter your birthday and discover your personal angel number.
-        </p>
-        <Link
-          href="/tools/angel-number-calculator"
-          className="inline-block rounded-lg bg-purple-700 text-white px-6 py-2 font-medium hover:bg-purple-800 transition"
-        >
-          Try the Calculator
-        </Link>
-      </section>
-
+      {/* Numerology Calculator */}
       <section className="bg-indigo-50 rounded-2xl p-6 text-center">
         <h2 className="text-xl font-semibold text-indigo-900 mb-2">
           🔮 Numerology Calculator
@@ -160,6 +90,31 @@ export default function HomePage() {
         >
           Find Your Life Path Number
         </Link>
+      </section>
+
+      {/* Other sections — de-emphasized, each has its own index page for SEO */}
+      <section>
+        <h2 className="text-xl font-semibold text-gray-700 mb-4">
+          Explore More
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <Link href="/dreams" className="rounded-xl border border-indigo-100 p-4 hover:border-indigo-300 hover:bg-indigo-50 transition">
+            <span className="text-lg font-bold text-indigo-800">Dream Dictionary</span>
+            <p className="text-xs text-gray-500 mt-1">Decode your dreams</p>
+          </Link>
+          <Link href="/crystals" className="rounded-xl border border-violet-100 p-4 hover:border-violet-300 hover:bg-violet-50 transition">
+            <span className="text-lg font-bold text-violet-800">Crystal Meanings</span>
+            <p className="text-xs text-gray-500 mt-1">Healing properties guide</p>
+          </Link>
+          <Link href="/feng-shui" className="rounded-xl border border-emerald-100 p-4 hover:border-emerald-300 hover:bg-emerald-50 transition">
+            <span className="text-lg font-bold text-emerald-800">Feng Shui</span>
+            <p className="text-xs text-gray-500 mt-1">Home & bedroom layout</p>
+          </Link>
+          <Link href="/tools/numerology-calculator" className="rounded-xl border border-indigo-100 p-4 hover:border-indigo-300 hover:bg-indigo-50 transition">
+            <span className="text-lg font-bold text-indigo-800">Numerology</span>
+            <p className="text-xs text-gray-500 mt-1">Life path calculator</p>
+          </Link>
+        </div>
       </section>
     </div>
   );
