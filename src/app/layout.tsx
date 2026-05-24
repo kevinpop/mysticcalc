@@ -56,6 +56,9 @@ export default function RootLayout({
               <a href="/crystals" className="hover:text-purple-700">
                 Crystals
               </a>
+              <a href="/feng-shui" className="hover:text-purple-700">
+                Feng Shui
+              </a>
               <a href="/tools/numerology-calculator" className="hover:text-purple-700">
                 Numerology
               </a>
