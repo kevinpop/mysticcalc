@@ -1,6 +1,8 @@
 import Link from "next/link";
 import angelNumbers from "@/data/angel-numbers.json";
 import dreamSymbols from "@/data/dream-symbols.json";
+import crystals from "@/data/crystals.json";
+import fengShui from "@/data/feng-shui.json";
 
 export default function HomePage() {
   const topAngel = Object.values(angelNumbers).slice(0, 6);
@@ -71,6 +73,62 @@ export default function HomePage() {
           className="mt-4 inline-block text-indigo-700 hover:underline"
         >
           View all dream meanings →
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold text-purple-800 mb-4">
+          Crystal Meanings &amp; Healing Properties
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {Object.values(crystals).map((c) => (
+            <Link
+              key={c.slug}
+              href={`/crystals/${c.slug}`}
+              className="rounded-xl border border-violet-100 p-4 hover:border-violet-300 hover:bg-violet-50 transition"
+            >
+              <span className="text-lg font-bold text-violet-800 capitalize">
+                {c.h1?.split("—")[0]?.trim() || c.slug.replace(/-/g, " ")}
+              </span>
+              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                {c.meaning?.substring(0, 100)}...
+              </p>
+            </Link>
+          ))}
+        </div>
+        <Link
+          href="/crystals"
+          className="mt-4 inline-block text-violet-700 hover:underline"
+        >
+          View all crystal meanings →
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold text-emerald-800 mb-4">
+          Feng Shui Guide
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {Object.values(fengShui).map((f) => (
+            <Link
+              key={f.slug}
+              href={`/feng-shui/${f.slug}`}
+              className="rounded-xl border border-emerald-100 p-4 hover:border-emerald-300 hover:bg-emerald-50 transition"
+            >
+              <span className="text-lg font-bold text-emerald-800 capitalize">
+                {f.title?.split("—")[0]?.trim() || f.slug.replace(/-/g, " ")}
+              </span>
+              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                {f.content?.substring(0, 100)}...
+              </p>
+            </Link>
+          ))}
+        </div>
+        <Link
+          href="/feng-shui"
+          className="mt-4 inline-block text-emerald-700 hover:underline"
+        >
+          View all feng shui guides →
         </Link>
       </section>
 
