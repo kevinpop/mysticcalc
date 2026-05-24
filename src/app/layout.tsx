@@ -53,11 +53,11 @@ export default function RootLayout({
               <a href="/dreams" className="hover:text-purple-700">
                 Dreams
               </a>
-              <a href="/tools/angel-number-calculator" className="hover:text-purple-700">
-                Calculator
+              <a href="/crystals" className="hover:text-purple-700">
+                Crystals
               </a>
-              <a href="/tools/dream-dictionary" className="hover:text-purple-700">
-                Dream Dictionary
+              <a href="/tools/numerology-calculator" className="hover:text-purple-700">
+                Numerology
               </a>
             </nav>
           </div>

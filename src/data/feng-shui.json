@@ -1,0 +1,161 @@
+{
+  "bedroom": {
+    "slug": "bedroom",
+    "title": "Feng Shui Bedroom Layout — Complete Guide (2026)",
+    "metaDescription": "Learn how to arrange your bedroom for better sleep and positive energy. Expert feng shui bedroom layout tips for bed placement, colors, and decor.",
+    "h1": "Feng Shui Bedroom Layout — Complete Guide",
+    "content": "Your bedroom is the most important room in feng shui. It is where you spend roughly one-third of your life, and the energy here directly affects your health, relationships, and overall well-being. A well-arranged bedroom promotes deep, restful sleep and strengthens the bond between partners. The key principles are simple: position your bed in the commanding place, keep the space clutter-free, and choose colors that nourish your element. Avoid placing your bed directly under a beam, facing a mirror, or aligned with the door. Symmetry matters — matching nightstands and lamps on both sides of the bed create balance and invite partnership energy. Electronics should be minimal, and natural materials like cotton, linen, and wood support grounding earth energy.",
+    "tips": [
+      "Place your bed diagonally opposite the door — the commanding position — so you can see who enters without being directly in line with the doorway.",
+      "Keep both sides of the bed accessible. Symmetrical nightstands and lamps invite balanced partnership energy.",
+      "Remove electronics from the bedroom. TVs, phones, and laptops disrupt sleep quality and generate yang energy that conflicts with rest.",
+      "Use soft, muted colors like warm whites, gentle blues, or earthy taupes. Avoid bright reds or stark blacks in large amounts.",
+      "Ensure the space under your bed is clean and uncluttered. Storing items under the bed blocks energy circulation during sleep.",
+      "Choose a solid headboard — wood or upholstered — for stability and support. Avoid metal or bar-style headboards that create sha qi.",
+      "Close closet doors and bathroom doors at night to prevent energy from escaping or draining away while you rest.",
+      "Add pairs of objects (two candles, two plants, two pillows) to strengthen relationship energy in the room."
+    ],
+    "colors": [
+      { "name": "Warm White", "hex": "#FAF3E8", "meaning": "Purity and fresh beginnings — ideal for a calm, restful bedroom." },
+      { "name": "Soft Blue", "hex": "#B8D4E3", "meaning": "Calm and tranquility — promotes deep sleep and peaceful communication." },
+      { "name": "Earthy Taupe", "hex": "#C4B7A6", "meaning": "Grounding and stability — creates a nurturing, secure environment." },
+      { "name": "Blush Pink", "hex": "#F2D7D5", "meaning": "Love and romance — strengthens partnership and softens the energy." },
+      { "name": "Sage Green", "hex": "#B2C9AB", "meaning": "Growth and renewal — brings natural healing energy into the space." }
+    ],
+    "faq": [
+      {
+        "question": "Where should I place my bed according to feng shui?",
+        "answer": "Place your bed in the commanding position — diagonally opposite the door so you can see the entrance without being directly in line with it. Avoid placing the headboard against a window or directly under a beam."
+      },
+      {
+        "question": "What colors are best for a feng shui bedroom?",
+        "answer": "Soft, muted tones work best: warm whites, gentle blues, earthy taupes, blush pinks, and sage greens. These colors promote rest and nurturing energy. Avoid overly bright or dark colors that create excessive yang energy."
+      },
+      {
+        "question": "Can I have a mirror in my feng shui bedroom?",
+        "answer": "Mirrors in the bedroom are generally discouraged, especially those facing the bed. They bounce energy around the room and can disturb sleep. If you must have a mirror, place it where it does not reflect the bed."
+      },
+      {
+        "question": "Should I remove electronics from my bedroom?",
+        "answer": "Yes — feng shui recommends removing or minimizing electronics in the bedroom. TVs, phones, and laptops generate electromagnetic energy and yang activity that disrupts restful sleep and intimate connection."
+      },
+      {
+        "question": "How does bed placement affect relationships?",
+        "answer": "A bed with equal access on both sides, paired nightstands, and a solid headboard strengthens partnership energy. Sleeping against a wall or with one side blocked can create imbalance in a relationship."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Feng Shui Colors Guide", "href": "/feng-shui/colors" },
+      { "label": "Feng Shui Home Tips", "href": "/feng-shui/tips" },
+      { "label": "Crystals for the Home", "href": "/crystals" },
+      { "label": "Angel Number Meanings", "href": "/angel-numbers" }
+    ]
+  },
+  "colors": {
+    "slug": "colors",
+    "title": "Feng Shui Colors — Complete Guide to Color Meanings",
+    "metaDescription": "Discover what each feng shui color means and how to use them in your home. From front doors to living rooms, learn which colors attract wealth, love, and luck.",
+    "h1": "Feng Shui Colors — Complete Guide to Color Meanings",
+    "content": "Color is one of the most powerful tools in feng shui. Each color carries a specific elemental energy that can shift the mood, attract opportunities, and balance the five elements — wood, fire, earth, metal, and water — in your home. Choosing the right color depends on the room's purpose, its compass direction, and the energy you want to cultivate. For example, red activates fire energy and is excellent for fame and recognition in the south sector, while blue and black carry water energy ideal for career growth in the north. Green represents wood and supports health and family in the east. Understanding the Bagua map helps you match colors to life areas. The front door is especially important — its color sets the tone for all energy entering your home. A south-facing door benefits from reds and oranges, while a north-facing door thrives with blues and blacks.",
+    "tips": [
+      "Match colors to the Bagua map: red/orange for the south (fame), green for the east (health), blue/black for the north (career).",
+      "Your front door color matters most — it is the mouth of qi where energy enters your home.",
+      "Use earth tones (yellows, beiges, terracottas) in the center of your home for stability and grounding.",
+      "Add metal element colors (white, gray, metallic) in the west and northwest for creativity and helpful people.",
+      "Avoid too much red in the bedroom — fire energy can cause restlessness and arguments.",
+      "Water colors (deep blue, black) are powerful for career but should be used sparingly to avoid feeling overwhelmed.",
+      "Green plants count as the wood element and are an easy way to add living color to any room.",
+      "Accent walls are a low-commitment way to introduce an element without overwhelming the space."
+    ],
+    "colors": [
+      { "name": "Red", "hex": "#C0392B", "meaning": "Fire element — passion, fame, recognition, and high energy. Best for the south sector." },
+      { "name": "Blue", "hex": "#2980B9", "meaning": "Water element — calm, career growth, and wisdom. Best for the north sector." },
+      { "name": "Green", "hex": "#27AE60", "meaning": "Wood element — health, family, and new beginnings. Best for the east sector." },
+      { "name": "Yellow", "hex": "#F1C40F", "meaning": "Earth element — stability, nourishment, and grounding. Best for the center and southwest." },
+      { "name": "White", "hex": "#ECF0F1", "meaning": "Metal element — clarity, precision, and helpful people. Best for the west and northwest." },
+      { "name": "Black", "hex": "#2C3E50", "meaning": "Water element — depth, career, and introspection. Use sparingly to avoid heaviness." },
+      { "name": "Purple", "hex": "#8E44AD", "meaning": "Fire element — wealth, spirituality, and luxury. Excellent for the southeast wealth corner." },
+      { "name": "Pink", "hex": "#FADBD8", "meaning": "Fire element — love, romance, and tenderness. Ideal for the southwest relationship area." }
+    ],
+    "faq": [
+      {
+        "question": "What is the best feng shui color for a front door?",
+        "answer": "The best front door color depends on its compass direction. South-facing doors thrive with red or orange. North-facing doors benefit from blue or black. East-facing doors do well with green or brown. West-facing doors suit white, gray, or metallic tones."
+      },
+      {
+        "question": "What color attracts wealth in feng shui?",
+        "answer": "Purple, red, green, and gold are the top wealth-attracting colors. Purple and red activate the southeast wealth corner. Green represents growth and wood energy that feeds abundance. Gold symbolizes metal and prosperity."
+      },
+      {
+        "question": "What feng shui colors are best for a bedroom?",
+        "answer": "Soft, muted tones like warm white, blush pink, gentle blue, and earthy taupe work best. These colors promote rest and nurturing energy. Avoid bright reds and stark blacks which can disrupt sleep."
+      },
+      {
+        "question": "Can I use black in feng shui?",
+        "answer": "Yes, but use black sparingly and strategically. Black represents the water element and is powerful for career energy in the north sector. Too much black can feel heavy and create yin stagnation. Use it as an accent rather than a dominant color."
+      },
+      {
+        "question": "How do I choose colors based on the Bagua map?",
+        "answer": "Identify which Bagua area a room falls in, then use colors that correspond to that element: green/wood for east and southeast, red/fire for south, blue/water for north, white/metal for west and northwest, yellow/earth for center and southwest."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Feng Shui Bedroom Layout", "href": "/feng-shui/bedroom" },
+      { "label": "Feng Shui Home Tips", "href": "/feng-shui/tips" },
+      { "label": "Crystal Colors & Meanings", "href": "/crystals" },
+      { "label": "Angel Number Meanings", "href": "/angel-numbers" }
+    ]
+  },
+  "tips": {
+    "slug": "tips",
+    "title": "Feng Shui Tips for Home — Beginner's Guide (2026)",
+    "metaDescription": "Easy feng shui tips for beginners. Learn how to improve energy flow, attract wealth, and create harmony in every room of your home.",
+    "h1": "Feng Shui Tips for Home — Beginner's Guide",
+    "content": "Feng shui is the ancient Chinese practice of arranging your environment to promote the smooth flow of qi — life force energy. At its core, it is environmental psychology: the way your space is organized directly affects your mood, productivity, and relationships. You do not need to be an expert to start seeing results. Simple changes like decluttering your entrance, fixing leaky faucets, and placing your desk in the commanding position can make a noticeable difference. The five elements — wood, fire, earth, metal, and water — are the building blocks of feng shui. When they are balanced in your home, energy flows freely and life feels easier. Start with the areas that matter most: the front door (where qi enters), the bedroom (where you recharge), and the kitchen (where nourishment begins). Small, intentional adjustments compound over time.",
+    "tips": [
+      "Start at your front door — it is the mouth of qi. Keep it clean, well-lit, and easy to open. A cluttered entrance blocks positive energy from entering.",
+      "Fix anything broken immediately. Leaky faucets drain wealth energy, squeaky doors create friction, and burnt-out lights dim opportunities.",
+      "Declutter ruthlessly. Clutter is the number one feng shui obstacle. If you have not used something in a year, let it go.",
+      "Place your desk and bed in the commanding position — facing the door but not directly in line with it. This gives you control and reduces anxiety.",
+      "Use the Bagua map to identify the nine life areas in your home. Focus on the areas that need the most attention (wealth, career, relationships).",
+      "Add living plants to bring wood energy and vitality. Avoid spiky or dying plants which create sha qi (cutting energy).",
+      "Balance the five elements in each room: a candle (fire), a plant (wood), a ceramic vase (earth), a metal frame (metal), and a small fountain or bowl of water (water).",
+      "Keep your stove clean and all burners working — the kitchen represents wealth and nourishment in feng shui."
+    ],
+    "colors": [
+      { "name": "Emerald Green", "hex": "#2ECC71", "meaning": "Growth and vitality — add through plants and natural materials." },
+      { "name": "Terracotta", "hex": "#E2725B", "meaning": "Earth element — grounding and nourishing for any room." },
+      { "name": "Navy Blue", "hex": "#2C3E50", "meaning": "Water element — career energy and depth. Use in the north." },
+      { "name": "Cream White", "hex": "#FFFDD0", "meaning": "Metal element — clarity and freshness. Universal calming tone." },
+      { "name": "Burnt Orange", "hex": "#CC5500", "meaning": "Fire element — warmth and social energy. Great for living rooms." }
+    ],
+    "faq": [
+      {
+        "question": "What is the first thing I should do to improve feng shui at home?",
+        "answer": "Declutter your front entrance and make sure the door opens freely. The front door is where qi enters your home. A clean, welcoming entrance sets the tone for all energy flowing through your space."
+      },
+      {
+        "question": "Do I need to believe in feng shui for it to work?",
+        "answer": "Feng shui works through environmental psychology — the way your space is organized affects your mood and behavior. You do not need spiritual belief to benefit from decluttering, better lighting, and thoughtful furniture arrangement."
+      },
+      {
+        "question": "What is the commanding position in feng shui?",
+        "answer": "The commanding position is where you can see the door without being directly in line with it. Apply this to your bed, desk, and stove. It gives you a sense of control and reduces subconscious anxiety."
+      },
+      {
+        "question": "How do I use the Bagua map?",
+        "answer": "Overlay the Bagua map on your floor plan with the entrance at the bottom. The nine zones correspond to life areas: career (north), knowledge (northeast), family (east), wealth (southeast), fame (south), relationships (southwest), children (west), helpful people (northwest), and health (center)."
+      },
+      {
+        "question": "Can feng shui really attract wealth?",
+        "answer": "Feng shui creates an environment that supports focus, opportunity awareness, and positive habits. By activating the southeast wealth corner with purple, green, or gold accents, and keeping your stove and front door in good condition, you align your space with abundance energy."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Feng Shui Bedroom Layout", "href": "/feng-shui/bedroom" },
+      { "label": "Feng Shui Colors Guide", "href": "/feng-shui/colors" },
+      { "label": "Crystals for the Home", "href": "/crystals" },
+      { "label": "Dream Dictionary", "href": "/dreams" }
+    ]
+  }
+}
