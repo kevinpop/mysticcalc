@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     "Free angel number calculator, dream dictionary, and spiritual tools. Discover the meaning of 444, 555, 777, and more. Decode your dreams and find your path.",
+  verification: {
+    google: "4iB5jWO1Sy1iwiy-grj-0v7yvDOZnpSz19kD5_PqILg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
