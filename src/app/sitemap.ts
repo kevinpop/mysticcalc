@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import angelNumbers from "@/data/angel-numbers.json";
 import dreamSymbols from "@/data/dream-symbols.json";
+import crystals from "@/data/crystals.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://mysticcalc.com";
@@ -9,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base, lastModified: new Date(), priority: 1.0 },
     { url: `${base}/angel-numbers`, lastModified: new Date(), priority: 0.9 },
     { url: `${base}/dreams`, lastModified: new Date(), priority: 0.9 },
+    { url: `${base}/crystals`, lastModified: new Date(), priority: 0.9 },
     {
       url: `${base}/tools/angel-number-calculator`,
       lastModified: new Date(),
@@ -54,5 +56,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...staticPages, ...angelPages, ...dreamPages];
+  const crystalPages: MetadataRoute.Sitemap = Object.values(crystals).map(
+    (c) => ({
+      url: `${base}/crystals/${c.slug}`,
+      lastModified: new Date(),
+      priority: 0.7,
+    })
+  );
+
+  // TODO: Add feng-shui pages when feng-shui.json data file is ready
+  // const fengShuiPages: MetadataRoute.Sitemap = Object.values(fengShui).map(...)
+
+  return [...staticPages, ...angelPages, ...dreamPages, ...crystalPages];
 }
